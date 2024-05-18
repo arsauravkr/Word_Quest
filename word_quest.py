@@ -15,6 +15,14 @@ def display_word_progress(secret_word, guessed_letters):
     progress = [letter if letter in guessed_letters else '_' for letter in secret_word]
     print(' '.join(progress))
 
+def reveal_random_letter(secret_word, guessed_letters):
+    """
+    Function to reveal a random letter in the secret word.
+    """
+    random_letter = random.choice(secret_word)
+    guessed_letters.add(random_letter)
+    print(f"As a bonus, here's a letter revealed for you: '{random_letter}'")
+
 def play_game():
     """
     Main function to play the word guessing game.
@@ -24,6 +32,9 @@ def play_game():
 
     guessed_letters = set()
     attempts = len(secret_word) + 2
+
+    # Reveal a random letter at the start
+    reveal_random_letter(secret_word, guessed_letters)
 
     while attempts > 0:
         display_word_progress(secret_word, guessed_letters)
