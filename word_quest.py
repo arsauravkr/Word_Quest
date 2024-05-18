@@ -64,5 +64,13 @@ def play_game():
         print("\nOut of attempts! Better luck next time.")
         print(f"The word was '{secret_word}'.")
 
+def main():
+    while True:
+        play_game()
+        replay = input("\nDo you want to play again? (y/n): ").strip().lower()
+        if replay != 'y':
+            print("Thanks for playing! Goodbye!")
+            break
+
 if __name__ == '__main__':
-    play_game()
+    main()
