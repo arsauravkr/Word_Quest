@@ -1,10 +1,10 @@
 # Guess That Animal
 
-A fun and engaging word-guessing game implemented in Python. The player has to guess the name of an animal by entering one letter at a time.
+A fun and engaging word-guessing game implemented in Python. The player has to guess the name of an animal by entering one letter at a time. As a bonus, one letter will be revealed at the start.
 
 ## Problem Statement
 
-Create a Python-based word-guessing game where the player must guess the name of an animal by entering one letter at a time. The player is given a limited number of attempts to guess the word correctly. The game should be engaging and provide feedback on each guess.
+Create a Python-based word-guessing game where the player must guess the name of an animal by entering one letter at a time. The player is given a limited number of attempts to guess the word correctly. The game should be engaging and provide feedback on each guess. Additionally, one letter is revealed at the start to make the game easier.
 
 ## Logic
 
@@ -15,6 +15,7 @@ Create a Python-based word-guessing game where the player must guess the name of
 2. **Game Initialization**:
     - Display an introduction message to the player.
     - Initialize the set of guessed letters and the number of attempts based on the length of the secret word.
+    - Reveal a random letter in the secret word.
 
 3. **Game Loop**:
     - Display the current progress of the word with guessed letters revealed and unguessed letters as underscores.
@@ -44,6 +45,7 @@ Create a Python-based word-guessing game where the player must guess the name of
 ## How to Play
 
 - The game will prompt you to guess the name of an animal.
+- One letter will be revealed at the start.
 - You will enter one letter at a time.
 - If the letter is in the word, it will be revealed in the correct position(s).
 - If you guess all the letters correctly before running out of attempts, you win!
@@ -55,18 +57,16 @@ Create a Python-based word-guessing game where the player must guess the name of
 Welcome to Guess That Animal!
 Guess the word! HINT: It's the name of an animal.
 
-_ _ _ _ _
+As a bonus, here's a letter revealed for you: 'a'
 
-Enter a letter to guess: a
-Good job! 'a' is in the word.
-_ a _ a _
+_ a _ _ _
+
+Enter a letter to guess: e
+Good job! 'e' is in the word.
+_ a _ e _
 
 Enter a letter to guess: t
-Good job! 't' is in the word.
-_ a t a _
-
-Enter a letter to guess: r
-Oops! 'r' is not in the word. You have 5 attempts left.
+Oops! 't' is not in the word. You have 6 attempts left.
 
 ...
 
