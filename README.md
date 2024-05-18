@@ -34,8 +34,8 @@ Create a Python-based word-guessing game where the player must guess the name of
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/guess-that-animal.git
-    cd guess-that-animal
+    git clone https://github.com/arsauravkr/Word_Quest.git
+    cd Word_Quest
     ```
 
 2. Run the game:
