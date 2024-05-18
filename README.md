@@ -28,6 +28,7 @@ Create a Python-based word-guessing game where the player must guess the name of
 4. **End Game**:
     - Congratulate the player if they guessed the word correctly.
     - Reveal the secret word if the player runs out of attempts.
+    - Ask the user if they want to play again.
 
 ## How to Run
 
@@ -50,6 +51,7 @@ Create a Python-based word-guessing game where the player must guess the name of
 - If the letter is in the word, it will be revealed in the correct position(s).
 - If you guess all the letters correctly before running out of attempts, you win!
 - If you run out of attempts before guessing the word, you lose.
+- After each game, you will be asked if you want to play again.
 
 ## Example
 
